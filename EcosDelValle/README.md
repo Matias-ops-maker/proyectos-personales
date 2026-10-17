@@ -30,5 +30,6 @@ el editor de Godot.
 
 ## Estado
 
-El proyecto está en sus primeras etapas. Por ahora tiene la pantalla inicial;
-el pueblo y sus habitantes se irán sumando de a poco.
+La pantalla inicial ya permite entrar al valle. El mapa tiene una vista superior
+y un espacio abierto para seguir construyendo el pueblo. El terreno y los lugares
+importantes se van a sumar en las próximas partes.

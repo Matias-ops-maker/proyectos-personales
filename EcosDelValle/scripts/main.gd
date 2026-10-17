@@ -2,7 +2,6 @@ extends Control
 
 var subtitle_label: Label
 var start_button: Button
-var back_button: Button
 
 
 func _ready() -> void:
@@ -46,21 +45,6 @@ func _build_screen() -> void:
 	start_button.pressed.connect(_on_start_pressed)
 	layout.add_child(start_button)
 
-	back_button = Button.new()
-	back_button.text = "Volver al inicio"
-	back_button.custom_minimum_size = Vector2(0, 48)
-	back_button.visible = false
-	back_button.pressed.connect(_on_back_pressed)
-	layout.add_child(back_button)
-
 
 func _on_start_pressed() -> void:
-	subtitle_label.text = "La base del juego está lista. En las próximas partes construiremos el valle y sus habitantes."
-	start_button.visible = false
-	back_button.visible = true
-
-
-func _on_back_pressed() -> void:
-	subtitle_label.text = "Un pequeño pueblo. Muchas vidas. Cada decisión deja huella."
-	start_button.visible = true
-	back_button.visible = false
+	get_tree().change_scene_to_file("res://scenes/valle.tscn")
