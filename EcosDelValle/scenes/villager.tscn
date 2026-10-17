@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/villager.gd" id="1_villager"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 10.0
+
+[node name="Habitante" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+motion_mode = 1
+script = ExtResource("1_villager")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_body")
+
+[node name="NameTag" type="Label" parent="."]
+offset_left = -42.0
+offset_top = -38.0
+offset_right = 42.0
+offset_bottom = -18.0
+theme_override_colors/font_color = Color(0.96, 0.94, 0.82, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.16, 0.14, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "Lía"
+horizontal_alignment = 1

@@ -30,6 +30,16 @@ el editor de Godot.
 
 ## Estado
 
-La pantalla inicial ya permite entrar al valle. El mapa tiene una vista superior
-y un espacio abierto para seguir construyendo el pueblo. El terreno y los lugares
-importantes se van a sumar en las próximas partes.
+La pantalla inicial ya permite entrar al valle. Es una partida individual: tiene
+casas, una plaza, una granja y Nexo Industrias, sin intercambios ni granjas de
+otros jugadores. En seis parcelas se puede sembrar trigo, zanahoria y tomate,
+esperar a que crezcan, cosecharlos y completar pedidos del mercado local para
+ganar monedas. Los habitantes conservan sus necesidades, rutinas, trabajos y
+relaciones; también se pueden seleccionar para consultar sus datos y darles
+órdenes.
+
+El pueblo y sus habitantes siguen siendo parte central de la historia. El foco
+jugable ahora está en desarrollar una granja propia: sembrar, cosechar, reunir
+recursos y completar pedidos de los comercios locales. La experiencia se plantea
+para jugar en solitario, sin depender de conexión ni de granjas de otras
+personas. Más adelante se irán sumando sistemas de producción y decoración.

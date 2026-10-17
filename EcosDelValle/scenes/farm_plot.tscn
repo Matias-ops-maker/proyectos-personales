@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/farm_plot.gd" id="1_plot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plot"]
+size = Vector2(62, 44)
+
+[node name="Parcela" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+input_pickable = true
+script = ExtResource("1_plot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_plot")
